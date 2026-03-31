@@ -1,0 +1,258 @@
+/* =====================================================
+   BARBER BOOKING PAGES — Shared Styles
+   ===================================================== */
+:root{
+  --espresso:#1A0E06;--mid:#5C3D2E;--caramel:#8B5E3C;--tan:#C4A882;
+  --gold:#C9A84C;--gold2:#F0CB6A;--gold3:#A07830;
+  --g-gold:linear-gradient(135deg,#C9A84C,#F0CB6A,#C9A84C);
+  --g-gold2:linear-gradient(90deg,#C9A84C,#F0CB6A);
+  --border-gold:rgba(201,168,76,.28);
+  --cream:#FAF6EF;--white:#FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:#0a0703;color:#fff;min-height:100vh;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* ── BG ── */
+.page-bg{
+  position:fixed;inset:0;z-index:0;
+  background:radial-gradient(ellipse 75% 55% at 50% 0%,rgba(201,168,76,.09) 0%,transparent 65%),#0a0703;
+}
+.page-bg::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(201,168,76,.022) 0,rgba(201,168,76,.022) 1px,transparent 1px,transparent 64px),
+    repeating-linear-gradient(90deg,rgba(201,168,76,.022) 0,rgba(201,168,76,.022) 1px,transparent 1px,transparent 64px);
+}
+
+/* ── BACK LINK ── */
+.back-link{
+  position:fixed;top:22px;left:26px;z-index:10;
+  display:flex;align-items:center;gap:8px;
+  font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:2px;
+  color:rgba(255,255,255,.42);text-transform:uppercase;transition:color .3s;
+}
+.back-link:hover{color:var(--gold2);}
+.back-link svg{transition:transform .3s;}
+.back-link:hover svg{transform:translateX(-3px);}
+
+/* ── PAGE WRAP ── */
+.page-wrap{
+  position:relative;z-index:1;min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;
+  padding:80px 24px 60px;
+}
+.page-logo{width:72px;margin:0 auto 28px;mix-blend-mode:lighten;display:block;opacity:.95;}
+.eyebrow{font-size:9px;font-weight:600;color:var(--gold);letter-spacing:6px;text-transform:uppercase;text-align:center;margin-bottom:10px;}
+.page-title{
+  font-family:'Cinzel',serif;font-size:clamp(24px,5vw,48px);font-weight:700;
+  text-align:center;letter-spacing:2px;line-height:1.15;margin-bottom:10px;
+  background:var(--g-gold2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.page-sub{font-size:14px;color:rgba(255,255,255,.46);text-align:center;max-width:440px;line-height:1.7;margin-bottom:14px;}
+.gd{display:flex;align-items:center;gap:12px;max-width:180px;margin:0 auto 46px;}
+.gd-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.gd-dot{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;}
+
+/* ── BARBERS GRID ── */
+.barbers-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;max-width:1200px;width:100%;
+}
+
+/* ── BARBER CARD (Business Card Style) ── */
+.barber-card{
+  background:rgba(250,246,239,.04);
+  border:1px solid var(--border-gold);
+  backdrop-filter:blur(10px);
+  position:relative;overflow:hidden;
+  transition:all .38s cubic-bezier(.25,.46,.45,.94);
+}
+.barber-card:hover{
+  transform:translateY(-7px);
+  border-color:rgba(201,168,76,.6);
+  box-shadow:0 20px 56px rgba(0,0,0,.5),0 0 36px rgba(201,168,76,.1);
+  background:rgba(250,246,239,.07);
+}
+/* Featured card (head barber) */
+.barber-card.featured{
+  border-color:rgba(201,168,76,.5);
+  background:rgba(201,168,76,.06);
+}
+.barber-card.featured:hover{
+  border-color:var(--gold2);
+  box-shadow:0 22px 60px rgba(0,0,0,.5),0 0 50px rgba(201,168,76,.18);
+}
+
+/* Gold top stripe */
+.barber-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--g-gold2);transform:scaleX(0);transform-origin:left;transition:transform .35s;
+}
+.barber-card:hover::before{transform:scaleX(1);}
+.barber-card.featured::before{transform:scaleX(1);}
+
+/* ── PHOTO WRAP ── */
+.bc-photo-wrap{position:relative;padding:24px 24px 0;}
+.bc-photo{
+  width:88px;height:88px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid var(--border-gold);
+  margin:0 auto;
+  position:relative;overflow:hidden;
+  transition:border-color .35s;
+}
+.barber-card:hover .bc-photo{border-color:rgba(201,168,76,.55);}
+.barber-card.featured .bc-photo{border-color:rgba(201,168,76,.55);width:96px;height:96px;}
+.bc-photo img{width:100%;height:100%;object-fit:cover;object-position:top;filter:brightness(.88) saturate(.9);}
+.bc-initials{
+  font-family:'Cinzel',serif;font-size:22px;font-weight:700;
+  background:var(--g-gold2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  letter-spacing:1px;
+}
+.barber-card.featured .bc-initials{font-size:26px;}
+.bc-badge{
+  position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);
+  font-family:'Cinzel',serif;font-size:8px;font-weight:700;letter-spacing:2px;
+  color:rgba(255,255,255,.7);background:rgba(26,14,6,.9);border:1px solid var(--border-gold);
+  padding:3px 12px;white-space:nowrap;text-transform:uppercase;
+}
+.bc-badge-gold{
+  color:var(--espresso) !important;background:var(--g-gold2) !important;border:none !important;
+}
+
+/* ── CARD BODY ── */
+.bc-body{padding:20px 20px 22px;}
+.bc-name{
+  font-family:'Cinzel',serif;font-size:14px;font-weight:700;
+  color:var(--white);letter-spacing:.5px;margin-bottom:4px;text-align:center;
+}
+.barber-card.featured .bc-name{font-size:15px;}
+.bc-role{font-size:9px;font-weight:600;color:var(--gold);letter-spacing:3px;text-transform:uppercase;text-align:center;margin-bottom:8px;}
+.bc-stars{color:var(--gold);font-size:12px;letter-spacing:2px;text-align:center;margin-bottom:10px;}
+.bc-spec{font-size:11px;color:rgba(255,255,255,.44);line-height:1.6;text-align:center;margin-bottom:16px;}
+.bc-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  font-family:'Cinzel',serif;font-size:9px;font-weight:700;letter-spacing:2px;
+  color:#0a0703 !important;text-transform:uppercase;
+  background:var(--g-gold2);padding:11px 16px;
+  clip-path:polygon(7px 0%,100% 0%,calc(100% - 7px) 100%,0% 100%);
+  border:none;cursor:pointer;transition:all .3s;
+  -webkit-text-fill-color:#0a0703 !important;
+}
+.bc-btn:hover{box-shadow:0 5px 20px rgba(201,168,76,.45);transform:translateY(-1px);}
+
+/* ── PAGE NOTE ── */
+.page-note{margin-top:44px;font-size:12px;color:rgba(255,255,255,.26);text-align:center;letter-spacing:.5px;}
+.page-note a{color:var(--gold);transition:color .3s;}
+.page-note a:hover{color:var(--gold2);}
+
+/* ── MODAL ── */
+.modal-overlay{
+  display:none;position:fixed;inset:0;z-index:9000;
+  background:rgba(10,7,3,.88);backdrop-filter:blur(14px);
+  align-items:center;justify-content:center;padding:24px;
+}
+.modal-overlay.open{display:flex;}
+.modal-box{
+  background:var(--cream);color:var(--espresso);
+  border:1px solid var(--border-gold);
+  padding:44px 40px;max-width:480px;width:100%;
+  position:relative;max-height:90vh;overflow-y:auto;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  animation:modalIn .35s cubic-bezier(.25,.46,.45,.94);
+}
+@keyframes modalIn{from{opacity:0;transform:scale(.92) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.modal-close{
+  position:absolute;top:14px;right:16px;
+  font-size:20px;color:var(--mid);background:none;border:none;cursor:pointer;
+  transition:color .3s,transform .3s;
+}
+.modal-close:hover{color:var(--espresso);transform:rotate(90deg);}
+.modal-logo{text-align:center;margin-bottom:16px;}
+.modal-eyebrow{font-size:9px;font-weight:600;color:var(--caramel);letter-spacing:5px;text-transform:uppercase;text-align:center;margin-bottom:8px;}
+.modal-title{font-family:'Cinzel',serif;font-size:clamp(18px,3vw,24px);font-weight:700;color:var(--espresso);text-align:center;letter-spacing:1px;margin-bottom:8px;}
+.modal-sub{font-size:13px;color:var(--mid);text-align:center;line-height:1.6;margin-bottom:26px;}
+.mf-row{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.mf-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:0;}
+.mf-row label{font-size:9px;font-weight:700;color:var(--caramel);letter-spacing:3px;text-transform:uppercase;}
+.mf-row input,.mf-row select,.mf-row textarea{
+  background:rgba(26,14,6,.04);border:1.5px solid rgba(26,14,6,.12);
+  color:var(--espresso);font-family:'Outfit',sans-serif;font-size:14px;font-weight:400;
+  padding:11px 13px;outline:none;-webkit-appearance:none;appearance:none;
+  transition:border-color .3s,background .3s;
+}
+.mf-row input:focus,.mf-row select:focus,.mf-row textarea:focus{
+  border-color:var(--gold);background:rgba(201,168,76,.04);
+}
+.mf-row select option{background:var(--cream);}
+.modal-send{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;margin-top:20px;
+  font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:3px;
+  color:#fff !important;text-transform:uppercase;
+  background:linear-gradient(135deg,#25D366,#1aab55);
+  padding:14px 24px;border:none;cursor:pointer;
+  clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);
+  transition:all .3s;-webkit-text-fill-color:#fff !important;
+}
+.modal-send:hover{box-shadow:0 6px 22px rgba(37,211,102,.4);transform:translateY(-2px);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){.barbers-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:800px){.barbers-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:500px){
+  .barbers-grid{grid-template-columns:1fr 1fr;gap:12px;}
+  .modal-box{padding:32px 22px;}
+  .mf-row2{grid-template-columns:1fr;}
+}
+@media(max-width:380px){.barbers-grid{grid-template-columns:1fr;}}
+
+/* ── PHOTO BG WITH OVERLAY ── */
+.page-bg { position: fixed; inset: 0; z-index: 0; }
+.page-bg-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.82) 0%,
+    rgba(10,7,3,.88) 60%,
+    rgba(10,7,3,.95) 100%
+  );
+}
+
+/* ── 4-COLUMN GRID FOR MECO 2 ── */
+.barbers-4 { grid-template-columns: repeat(4, 1fr) !important; }
+@media(max-width:900px)  { .barbers-4 { grid-template-columns: repeat(2,1fr) !important; } }
+@media(max-width:480px)  { .barbers-4 { grid-template-columns: repeat(2,1fr) !important; } }
+
+/* ── MODAL LOGO ── */
+.modal-logo-img {
+  display: block; width: 54px; margin: 0 auto 14px;
+  mix-blend-mode: multiply; filter: brightness(.25);
+}
+
+/* ── BADGE: all gold for experts ── */
+.bc-badge-gold {
+  color: var(--espresso) !important;
+  background: linear-gradient(90deg, #C9A84C, #F0CB6A) !important;
+  border: none !important;
+  font-weight: 700;
+}
+
+/* ── DARK INTRO-STYLE BG for Meco 3 ── */
+.page-bg-dark {
+  background: #000000 !important;
+  background-image: none !important;
+}
+.page-bg-dark .page-bg-overlay { display: none; }
+.page-bg-glow {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 35%,
+    rgba(201,168,76,.1) 0%,
+    rgba(201,168,76,.03) 50%,
+    transparent 75%
+  );
+  pointer-events: none;
+}
