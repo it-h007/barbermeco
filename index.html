@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Barber Meço 3 — Premium Grooming Experience in Tirana, Albania. Since 2007.">
+<title>Barber Meço 3 — Premium Grooming Since 2007</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =================== INTRO SCREEN =================== -->
+<div id="intro-screen">
+  <img src="images/1773662793739_image.png" alt="Barber Meço 3" id="intro-logo">
+  <div id="intro-tagline">
+    <span data-en="The Best Barber In Tirana" data-al="Berberi Më i Mirë në Tiranë">The Best Barber In Tirana</span>
+  </div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- =================== HEADER =================== -->
+<header id="header">
+  <a href="#hero" class="logo-wrap">
+    <img src="images/1773662793739_image.png" alt="Barber Meço 3 Logo">
+    <div class="logo-text">
+      <span>BARBER MEÇO 3</span>
+      <span data-en="Premium Grooming · Since 2007" data-al="Rregullim Premium · Që nga 2007">Premium Grooming · Since 2007</span>
+    </div>
+  </a>
+  <nav>
+    <a href="#about" data-en="About" data-al="Rreth Nesh">About</a>
+    <a href="#services" data-en="Services" data-al="Shërbimet">Services</a>
+    <a href="#pricelist" data-en="Prices" data-al="Çmimet">Prices</a>
+    <a href="#gallery" data-en="Gallery" data-al="Galeria">Gallery</a>
+    <a href="#team" data-en="Team" data-al="Ekipi">Team</a>
+    <a href="#testimonials" data-en="Reviews" data-al="Vlerësimet">Reviews</a>
+    <a href="#location" data-en="Location" data-al="Vendndodhja">Location</a>
+    <a href="#booking" class="nav-book" data-en="Book Now" data-al="Rezervo">Book Now</a>
+    <a href="book-barber.html" class="nav-book-barber" target="_blank" data-en="Book the Barber" data-al="Rezervo Berberin">Book the Barber</a>
+  </nav>
+  <div class="header-right">
+    <!-- Language Switcher -->
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn active" data-l="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-l="al">AL</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileClose">✕</button>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-l="en">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-l="al">AL</button>
+  </div>
+  <a href="#about"        class="mobile-link" data-en="About"       data-al="Rreth Nesh">About</a>
+  <a href="#services"     class="mobile-link" data-en="Services"    data-al="Shërbimet">Services</a>
+  <a href="#pricelist"    class="mobile-link" data-en="Prices"      data-al="Çmimet">Prices</a>
+  <a href="#gallery"      class="mobile-link" data-en="Gallery"     data-al="Galeria">Gallery</a>
+  <a href="#team"         class="mobile-link" data-en="Team"        data-al="Ekipi">Team</a>
+  <a href="#testimonials" class="mobile-link" data-en="Reviews"     data-al="Vlerësimet">Reviews</a>
+  <a href="#location"     class="mobile-link" data-en="Location"    data-al="Vendndodhja">Location</a>
+  <a href="#booking"      class="mobile-link gold-link" data-en="Book Now" data-al="Rezervo">Book Now</a>
+  <a href="book-barber.html" class="mobile-link" style="color:var(--gold);font-size:16px;" target="_blank" data-en="Book the Barber" data-al="Rezervo Berberin">Book the Barber</a>
+</div>
+
+<!-- =================== HERO =================== -->
+<section id="hero">
+  <div class="hero-bg">
+    <img src="images/hero_new.png" alt="Barber Meço 3 Exterior">
+  </div>
+  <div class="hero-overlay"></div>
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-eyebrow" data-en="Tirana's Premier Grooming Lounge" data-al="Salloni Premium i Rregullimit në Tiranë">Tirana's Premier Grooming Lounge</div>
+    <img src="images/1773662793739_image.png" alt="Logo" class="hero-logo">
+    <h1 class="hero-title">
+      <span class="ht-barber">Barber</span>
+      <span class="ht-meco">Meço</span>
+      <span class="ht-3">3</span>
+    </h1>
+    <p class="hero-tagline" data-en="Premium Grooming Experience" data-al="Eksperiencë Premium Rregullimi">Premium Grooming Experience</p>
+    <div class="hero-since">— Since 2007 —</div>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary wa-btn"
+         data-en-msg="Hello Barber Meço 3! I would like to book an appointment. Please let me know your availability."
+         data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj nje takim. Ju lutem me tregoni disponibilitetin tuaj."
+         data-en="Book Appointment" data-al="Rezervo Takim">
+        <span>Book Appointment</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#services" class="btn-outline" data-en="View Services" data-al="Shiko Shërbimet">View Services</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span data-en="Scroll" data-al="Lëviz">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- =================== STATS =================== -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <span class="stat-number" data-target="18" data-suffix="+">0</span>
+      <span class="stat-label" data-en="Years of Excellence" data-al="Vite Ekscelence">Years of Excellence</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item reveal" style="transition-delay:.1s">
+      <span class="stat-number" data-target="4.7" data-decimal="1">0</span>
+      <span class="stat-label" data-en="Google Rating" data-al="Vlerësim Google">Google Rating</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item reveal" style="transition-delay:.2s">
+      <span class="stat-number" data-target="5000" data-suffix="+">0</span>
+      <span class="stat-label" data-en="Happy Clients" data-al="Klientë të Kënaqur">Happy Clients</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item reveal" style="transition-delay:.3s">
+      <span class="stat-number" data-target="16">0</span>
+      <span class="stat-label" data-en="Premium Services" data-al="Shërbime Premium">Premium Services</span>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ABOUT =================== -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-img-col reveal-left">
+      <div class="about-img-frame">
+        <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__28_.jpeg" alt="Interior">
+        <div class="about-img-badge">SINCE 2007</div>
+      </div>
+      <div class="about-img-secondary">
+        <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__11_.jpeg" alt="Interior">
+      </div>
+    </div>
+    <div class="about-content reveal-right">
+      <span class="section-label" data-en="Our Story" data-al="Historia Jonë">Our Story</span>
+      <h2 class="section-heading left">
+        <span data-en="The Art of " data-al="Arti i ">The Art of </span><span class="gold-text" data-en="Precision" data-al="Precizionit">Precision</span>
+      </h2>
+      <div class="gold-divider left-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+      <p class="about-lead" data-en="Since 2007, Barber Meço 3 has been Tirana's destination for the discerning gentleman — where tradition meets modern sophistication." data-al="Që nga 2007, Barber Meço 3 ka qenë destinacioni i Tiranës për zotërinjtë kërkues — ku tradita takon sofistikimin modern.">Since 2007, Barber Meço 3 has been Tirana's destination for the discerning gentleman — where tradition meets modern sophistication.</p>
+      <p class="about-body" data-en="Every visit is a curated experience. Our master barbers blend time-honoured techniques with contemporary style, ensuring each client leaves looking and feeling extraordinary." data-al="Çdo vizitë është një eksperiencë e kuruar. Berberi ynë kryesor kombinon teknikat tradicionale me stilin bashkëkohor, duke siguruar që çdo klient largohet duke u dukur dhe ndjerë i jashtëzakonshëm.">Every visit is a curated experience. Our master barbers blend time-honoured techniques with contemporary style, ensuring each client leaves looking and feeling extraordinary.</p>
+      <div class="about-features">
+        <div class="af-item">
+          <div class="af-icon">✂</div>
+          <div class="af-text">
+            <strong data-en="Master Craftsmanship" data-al="Mjeshtëri e Lartë">Master Craftsmanship</strong>
+            <span data-en="18+ years of precision grooming — each cut is a work of art." data-al="18+ vite rregullim preciz — çdo prerje është një vepër arti.">18+ years of precision grooming — each cut is a work of art.</span>
+          </div>
+        </div>
+        <div class="af-item">
+          <div class="af-icon">◈</div>
+          <div class="af-text">
+            <strong data-en="Premium Products" data-al="Produkte Premium">Premium Products</strong>
+            <span data-en="Exclusively top-tier grooming products for exceptional results." data-al="Produkte ekskluzive të nivelit të lartë për rezultate të jashtëzakonshme.">Exclusively top-tier grooming products for exceptional results.</span>
+          </div>
+        </div>
+        <div class="af-item">
+          <div class="af-icon">⚜</div>
+          <div class="af-text">
+            <strong data-en="Luxury Atmosphere" data-al="Atmosferë Luksoze">Luxury Atmosphere</strong>
+            <span data-en="A refined, welcoming space designed for the modern gentleman." data-al="Një hapësirë e rafinuar dhe mikpritëse e dizajnuar për zotërinjtë modernë.">A refined, welcoming space designed for the modern gentleman.</span>
+          </div>
+        </div>
+        <div class="af-item">
+          <div class="af-icon">★</div>
+          <div class="af-text">
+            <strong data-en="Rated 4.7 / 5" data-al="Vlerësuar 4.7 / 5">Rated 4.7 / 5</strong>
+            <span data-en="Trusted by hundreds of satisfied clients across Tirana." data-al="I besuar nga qindra klientë të kënaqur në të gjithë Tiranën.">Trusted by hundreds of satisfied clients across Tirana.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES =================== -->
+<section id="services">
+  <div class="section-intro reveal">
+    <span class="section-label" data-en="What We Offer" data-al="Çfarë Ofrojmë">What We Offer</span>
+    <h2 class="section-heading"><span data-en="Premium " data-al="Shërbime ">Premium </span><span class="gold-text" data-en="Services" data-al="Premium">Services</span></h2>
+    <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+    <p class="section-desc" data-en="Each service is crafted with meticulous attention to detail, using only the finest techniques and products." data-al="Çdo shërbim është hartuar me vëmendje të madhe ndaj detajeve, duke përdorur vetëm teknikat dhe produktet më të mira.">Each service is crafted with meticulous attention to detail, using only the finest techniques and products.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal" style="transition-delay:.05s" data-service-en="Haircut + Wash / Scrub — 1,200 Lek" data-service-al="Qethje + larje / scrub — 1,200 Lek">
+      <div class="sc-number">01</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9l6-6 6 6M6 15l6 6 6-6"/></svg></div>
+      <h3 class="sc-name" data-en="Haircut + Wash / Scrub" data-al="Qethje + Larje / Scrub">Haircut + Wash / Scrub</h3>
+      <p class="sc-desc" data-en="A signature cut paired with a revitalising wash and scalp scrub." data-al="Prerje karakteristike me larje dhe trajtim scrub të lëkurës së kokës.">A signature cut paired with a revitalising wash and scalp scrub.</p>
+      <div class="sc-footer">
+        <span class="sc-price">1,200 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Haircut + Wash / Scrub (1,200 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje + Larje / Scrub (1,200 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.1s" data-service-en="Haircut + Beard Trim — 1,500 Lek" data-service-al="Qethje + Rregullim Mjekre — 1,500 Lek">
+      <div class="sc-number">02</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+      <h3 class="sc-name" data-en="Haircut + Beard Trim" data-al="Qethje + Rregullim Mjekre">Haircut + Beard Trim</h3>
+      <p class="sc-desc" data-en="The classic gentleman's package — precision cut with sculpted beard." data-al="Paketa klasike e zotëriut — prerje precize me mjekër të skulpturuar.">The classic gentleman's package — precision cut with sculpted beard.</p>
+      <div class="sc-footer">
+        <span class="sc-price">1,500 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Haircut + Beard Trim (1,500 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje + Rregullim Mjekre (1,500 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.15s" data-service-en="Haircut + Beard + Wax — 1,700 Lek" data-service-al="Qethje + Mjekre + Wax — 1,700 Lek">
+      <div class="sc-number">03</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <h3 class="sc-name" data-en="Haircut + Beard + Wax" data-al="Qethje + Mjekre + Wax">Haircut + Beard + Wax</h3>
+      <p class="sc-desc" data-en="Complete grooming with premium beard wax for a flawless finish." data-al="Rregullim i plotë me wax premium për mjekrën për një rezultat të pakëputur.">Complete grooming with premium beard wax for a flawless finish.</p>
+      <div class="sc-footer">
+        <span class="sc-price">1,700 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Haircut + Beard + Wax (1,700 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje + Mjekre + Wax (1,700 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.2s" data-service-en="Haircut + Beard Full Wax — 2,000 Lek" data-service-al="Qethje + Mjekre Full Wax — 2,000 Lek">
+      <div class="sc-number">04</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      <h3 class="sc-name" data-en="Haircut + Beard Full Wax" data-al="Qethje + Mjekre Full Wax">Haircut + Beard Full Wax</h3>
+      <p class="sc-desc" data-en="The ultimate transformation — full beard wax for the distinguished gentleman." data-al="Transformimi përfundimtar — wax i plotë për mjekrën e zotëriut të dalluar.">The ultimate transformation — full beard wax for the distinguished gentleman.</p>
+      <div class="sc-footer">
+        <span class="sc-price">2,000 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Haircut + Beard Full Wax (2,000 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje + Mjekre Full Wax (2,000 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.25s" data-service-en="Haircut + Beard Wax/Mask — 2,200 Lek" data-service-al="Qethje + Mjekre Wax/Mask — 2,200 Lek">
+      <div class="sc-number">05</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <h3 class="sc-name" data-en="Haircut + Beard Wax/Mask" data-al="Qethje + Mjekre Wax/Mask">Haircut + Beard Wax/Mask</h3>
+      <p class="sc-desc" data-en="Premium wax styling combined with a nourishing beard mask." data-al="Stilim wax premium i kombinuar me një maskë ushqyese për mjekrën.">Premium wax styling combined with a nourishing beard mask.</p>
+      <div class="sc-footer">
+        <span class="sc-price">2,200 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Haircut + Beard Wax/Mask (2,200 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje + Mjekre Wax/Mask (2,200 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.3s" data-service-en="Kids Haircut — 800 Lek" data-service-al="Qethje Fëmijësh — 800 Lek">
+      <div class="sc-number">06</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg></div>
+      <h3 class="sc-name" data-en="Kids Haircut" data-al="Qethje Fëmijësh">Kids Haircut</h3>
+      <p class="sc-desc" data-en="Gentle, patient service for the young gentleman — every detail with care." data-al="Shërbim i butë dhe i durueshëm për zotërinjtë e rinj — çdo detaj me kujdes.">Gentle, patient service for the young gentleman — every detail with care.</p>
+      <div class="sc-footer">
+        <span class="sc-price">800 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Kids Haircut (800 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje Femijesh (800 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.35s" data-service-en="Zero Haircut — 700 Lek" data-service-al="Qethje Zero — 700 Lek">
+      <div class="sc-number">07</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg></div>
+      <h3 class="sc-name" data-en="Zero Haircut" data-al="Qethje Zero">Zero Haircut</h3>
+      <p class="sc-desc" data-en="Clean, precise zero-fade cut for a bold, modern statement." data-al="Prerje zero e pastër dhe precize për një deklaratë moderne dhe guximtare.">Clean, precise zero-fade cut for a bold, modern statement.</p>
+      <div class="sc-footer">
+        <span class="sc-price">700 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Zero Haircut (700 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Qethje Zero (700 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.4s" data-service-en="Beard Shave — 700 Lek" data-service-al="Rruajtje me Brisk — 700 Lek">
+      <div class="sc-number">08</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+      <h3 class="sc-name" data-en="Beard Shave" data-al="Rruajtje me Brisk">Beard Shave</h3>
+      <p class="sc-desc" data-en="Classic straight-razor shave delivering the perfect gentleman's finish." data-al="Rruajtje klasike me brisk duke ofruar finishin perfekt të zotëriut.">Classic straight-razor shave delivering the perfect gentleman's finish.</p>
+      <div class="sc-footer">
+        <span class="sc-price">700 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Beard Shave (700 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Rruajtje me Brisk (700 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.45s" data-service-en="Machine Shave — 300 Lek" data-service-al="Rruajtje me Makinë — 300 Lek">
+      <div class="sc-number">09</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+      <h3 class="sc-name" data-en="Machine Shave" data-al="Rruajtje me Makinë">Machine Shave</h3>
+      <p class="sc-desc" data-en="Efficient, precise machine shave for a groomed, well-defined look." data-al="Rruajtje precize dhe efikase me makinë për një pamje të rregulluar mirë.">Efficient, precise machine shave for a groomed, well-defined look.</p>
+      <div class="sc-footer">
+        <span class="sc-price">300 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Machine Shave (300 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Rruajtje me Makine (300 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.5s" data-service-en="Beard Styling / Trim — 600 Lek" data-service-al="Stilim Mjekre / Brisk — 600 Lek">
+      <div class="sc-number">10</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+      <h3 class="sc-name" data-en="Beard Styling / Trim" data-al="Stilim Mjekre / Brisk">Beard Styling / Trim</h3>
+      <p class="sc-desc" data-en="Expert shaping and trimming to perfect your beard's natural contours." data-al="Formësim dhe shkurtim ekspert për të përsosur konturet natyrore të mjekrës suaj.">Expert shaping and trimming to perfect your beard's natural contours.</p>
+      <div class="sc-footer">
+        <span class="sc-price">600 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Beard Styling / Trim (600 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Stilim Mjekre / Brisk (600 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.55s" data-service-en="Beard Wax Styling — 800 Lek" data-service-al="Stilim Mjekre me Wax — 800 Lek">
+      <div class="sc-number">11</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+      <h3 class="sc-name" data-en="Beard Wax Styling" data-al="Stilim Mjekre me Wax">Beard Wax Styling</h3>
+      <p class="sc-desc" data-en="Professional wax styling to sculpt and define your beard to perfection." data-al="Stilim profesional me wax për të skulpturuar dhe definuar mjekrën tuaj deri në përsosmëri.">Professional wax styling to sculpt and define your beard to perfection.</p>
+      <div class="sc-footer">
+        <span class="sc-price">800 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Beard Wax Styling (800 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Stilim Mjekre me Wax (800 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.6s" data-service-en="Face Mask — 500 Lek" data-service-al="Maskë Argile — 500 Lek">
+      <div class="sc-number">12</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3 class="sc-name" data-en="Face Mask" data-al="Maskë Argile">Face Mask</h3>
+      <p class="sc-desc" data-en="Luxurious clay mask to deeply cleanse, purify and revitalise." data-al="Maskë argjile luksoze për pastrimin, purifikimin dhe rigjallërimin e thellë.">Luxurious clay mask to deeply cleanse, purify and revitalise.</p>
+      <div class="sc-footer">
+        <span class="sc-price">500 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Face Mask (500 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Maske Argile (500 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.65s" data-service-en="Face Scrub — 500 Lek" data-service-al="Scrub Fytyre — 500 Lek">
+      <div class="sc-number">13</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+      <h3 class="sc-name" data-en="Face Scrub" data-al="Scrub Fytyre">Face Scrub</h3>
+      <p class="sc-desc" data-en="Exfoliating facial treatment to remove dead cells and reveal radiant skin." data-al="Trajtim eksfoliues facial për të hequr qelizat e vdekura dhe zbuluar lëkurën e ndritur.">Exfoliating facial treatment to remove dead cells and reveal radiant skin.</p>
+      <div class="sc-footer">
+        <span class="sc-price">500 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Face Scrub (500 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Scrub Fytyre (500 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.7s" data-service-en="Beard Oil Treatment — 500 Lek" data-service-al="Lyrje Mjekre — 500 Lek">
+      <div class="sc-number">14</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+      <h3 class="sc-name" data-en="Beard Oil Treatment" data-al="Lyrje Mjekre">Beard Oil Treatment</h3>
+      <p class="sc-desc" data-en="Nourishing premium oil treatment to condition and strengthen beard hair." data-al="Trajtim premium me vaj ushqyes për të kondicionuar dhe forcuar flokët e mjekrës.">Nourishing premium oil treatment to condition and strengthen beard hair.</p>
+      <div class="sc-footer">
+        <span class="sc-price">500 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Beard Oil Treatment (500 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Lyrje Mjekre (500 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.75s" data-service-en="Hair Oil Treatment — 800 Lek" data-service-al="Lyrje Koke — 800 Lek">
+      <div class="sc-number">15</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <h3 class="sc-name" data-en="Hair Oil Treatment" data-al="Lyrje Koke">Hair Oil Treatment</h3>
+      <p class="sc-desc" data-en="Intensive scalp and hair oil treatment for deep nourishment and shine." data-al="Trajtim intensiv me vaj për lëkurën e kokës dhe flokët për ushqim të thellë dhe shkëlqim.">Intensive scalp and hair oil treatment for deep nourishment and shine.</p>
+      <div class="sc-footer">
+        <span class="sc-price">800 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Hair Oil Treatment (800 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Lyrje Koke (800 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:.8s" data-service-en="Hair Wash + Styling — 300 Lek" data-service-al="Larje Koke + Stilim — 300 Lek">
+      <div class="sc-number">16</div>
+      <div class="sc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3 class="sc-name" data-en="Hair Wash + Styling" data-al="Larje Koke + Stilim">Hair Wash + Styling</h3>
+      <p class="sc-desc" data-en="Professional wash and expert styling to complete your refined look." data-al="Larje profesionale dhe stilim ekspert për të plotësuar pamjen tuaj të rafinuar.">Professional wash and expert styling to complete your refined look.</p>
+      <div class="sc-footer">
+        <span class="sc-price">300 <small>Lek</small></span>
+        <a href="#" class="sc-book wa-btn"
+           data-en-msg="Hello Barber Meço 3! I would like to book: Hair Wash + Styling (300 Lek). Please confirm my appointment."
+           data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj: Larje Koke + Stilim (300 Lek). Ju lutem konfirmoni takimin tim."
+           data-en="Book →" data-al="Rezervo →">Book →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== PRICE LIST =================== -->
+<section id="pricelist">
+  <div class="section-intro reveal">
+    <span class="section-label" data-en="Price List" data-al="Lista e Çmimeve">Price List</span>
+    <h2 class="section-heading"><span data-en="Our " data-al="Çmimet ">Our </span><span class="gold-text" data-en="Prices" data-al="Tona">Prices</span></h2>
+    <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+  </div>
+  <div class="price-filters reveal">
+    <button class="filter-tab active" data-filter="all" data-en="All Services" data-al="Të Gjitha">All Services</button>
+    <button class="filter-tab" data-filter="haircut" data-en="Haircuts" data-al="Qethje">Haircuts</button>
+    <button class="filter-tab" data-filter="beard" data-en="Beard" data-al="Mjekra">Beard</button>
+    <button class="filter-tab" data-filter="facial" data-en="Facial" data-al="Fytyre">Facial</button>
+  </div>
+  <div class="price-board reveal">
+    <div class="pb-corner pb-tl"></div><div class="pb-corner pb-tr"></div>
+    <div class="pb-corner pb-bl"></div><div class="pb-corner pb-br"></div>
+    <div class="pb-inner-border"></div>
+    <div class="pb-header">
+      <img src="images/1773662793739_image.png" alt="Logo" class="pb-logo">
+      <div class="pb-title">BARBER MEÇO 3</div>
+      <div class="pb-sub" data-en="— Since 2007 · Tiranë, Albania —" data-al="— Që nga 2007 · Tiranë, Shqipëri —">— Since 2007 · Tiranë, Albania —</div>
+    </div>
+    <div class="pb-group" data-cat="haircut">
+      <div class="pb-group-title" data-en="Haircuts" data-al="Qethje">Haircuts</div>
+      <div class="pb-row"><span class="pb-num">01</span><span class="pb-name" data-en="Haircut + Wash / Scrub" data-al="Qethje + larje / scrub">Haircut + Wash / Scrub</span><span class="pb-dots"></span><span class="pb-price">1,200 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">02</span><span class="pb-name" data-en="Haircut + Beard Trim" data-al="Qethje rreg mjekre">Haircut + Beard Trim</span><span class="pb-dots"></span><span class="pb-price">1,500 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">03</span><span class="pb-name" data-en="Haircut + Beard + Wax" data-al="Qethje rreg mjekre wax">Haircut + Beard + Wax</span><span class="pb-dots"></span><span class="pb-price">1,700 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">04</span><span class="pb-name" data-en="Haircut + Beard Full Wax" data-al="Qethje reg mjekre full wax">Haircut + Beard Full Wax</span><span class="pb-dots"></span><span class="pb-price">2,000 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">05</span><span class="pb-name" data-en="Haircut + Beard Wax / Mask" data-al="Qethje reg mjekre wax / mask">Haircut + Beard Wax / Mask</span><span class="pb-dots"></span><span class="pb-price">2,200 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">06</span><span class="pb-name" data-en="Kids Haircut" data-al="Qethje moshur / femi">Kids Haircut</span><span class="pb-dots"></span><span class="pb-price">800 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">07</span><span class="pb-name" data-en="Zero Haircut" data-al="Qethje zero">Zero Haircut</span><span class="pb-dots"></span><span class="pb-price">700 Lek</span></div>
+    </div>
+    <div class="pb-group" data-cat="beard">
+      <div class="pb-group-title" data-en="Beard &amp; Shave" data-al="Mjekra &amp; Rruajtje">Beard &amp; Shave</div>
+      <div class="pb-row"><span class="pb-num">08</span><span class="pb-name" data-en="Beard Shave" data-al="Rruajtje me brisk">Beard Shave</span><span class="pb-dots"></span><span class="pb-price">700 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">09</span><span class="pb-name" data-en="Machine Shave" data-al="Rruajtje 0 me makin">Machine Shave</span><span class="pb-dots"></span><span class="pb-price">300 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">10</span><span class="pb-name" data-en="Beard Styling / Trim" data-al="Stilim mjekre / brisk">Beard Styling / Trim</span><span class="pb-dots"></span><span class="pb-price">600 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">11</span><span class="pb-name" data-en="Beard Wax Styling" data-al="Stilim mjekre / wax / pe">Beard Wax Styling</span><span class="pb-dots"></span><span class="pb-price">800 Lek</span></div>
+    </div>
+    <div class="pb-group" data-cat="facial">
+      <div class="pb-group-title" data-en="Facial &amp; Treatments" data-al="Fytyre &amp; Trajtime">Facial &amp; Treatments</div>
+      <div class="pb-row"><span class="pb-num">12</span><span class="pb-name" data-en="Face Mask" data-al="Mask argile">Face Mask</span><span class="pb-dots"></span><span class="pb-price">500 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">13</span><span class="pb-name" data-en="Face Scrub" data-al="Scrub fytyre">Face Scrub</span><span class="pb-dots"></span><span class="pb-price">500 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">14</span><span class="pb-name" data-en="Beard Oil Treatment" data-al="Lyrje mjekre">Beard Oil Treatment</span><span class="pb-dots"></span><span class="pb-price">500 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">15</span><span class="pb-name" data-en="Hair Oil Treatment" data-al="Lyrje koke">Hair Oil Treatment</span><span class="pb-dots"></span><span class="pb-price">800 Lek</span></div>
+      <div class="pb-row"><span class="pb-num">16</span><span class="pb-name" data-en="Hair Wash + Styling" data-al="Larje koke stilim">Hair Wash + Styling</span><span class="pb-dots"></span><span class="pb-price">300 Lek</span></div>
+    </div>
+    <div class="pb-footer">
+      <span>@barber_meco.3</span>
+      <span>+355 69 208 0017</span>
+    </div>
+  </div>
+</section>
+
+<!-- =================== GALLERY =================== -->
+<section id="gallery">
+  <div class="section-intro reveal">
+    <span class="section-label" data-en="Our Work" data-al="Puna Jonë">Our Work</span>
+    <h2 class="section-heading"><span data-en="The " data-al="Galeria ">The </span><span class="gold-text" data-en="Gallery" data-al="Jonë">Gallery</span></h2>
+    <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+  </div>
+  <div class="gallery-filters reveal">
+    <button class="filter-tab active" data-filter="all" data-en="All" data-al="Të Gjitha">All</button>
+    <button class="filter-tab" data-filter="haircut" data-en="Haircuts" data-al="Qethje">Haircuts</button>
+    <button class="filter-tab" data-filter="facial" data-en="Facial" data-al="Fytyre">Facial</button>
+    <button class="filter-tab" data-filter="interior" data-en="Interior" data-al="Ambiente">Interior</button>
+  </div>
+  <div class="gallery-masonry" id="galleryGrid">
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__21_.jpeg" alt="Precision Fade"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__7_.jpeg" alt="Classic Slick Back"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="facial"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__3_.jpeg" alt="Beard Wax"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__22_.jpeg" alt="Fade Cut"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="facial"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__4_.jpeg" alt="Face Scrub"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__23_.jpeg" alt="Skin Fade"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="facial"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__9_.jpeg" alt="Oil Treatment"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="interior"><img src="images/interior_2a.png" alt="Interior — Barber Stations"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__24_.jpeg" alt="Hard Part Fade"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="facial"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__12_.jpeg" alt="Beard Wax Treatment"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__25_.jpeg" alt="Pompadour Fade"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="facial"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__26_.jpeg" alt="Facial Treatment"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="interior"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__1_.jpeg" alt="Shop Interior"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="haircut"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__11_.jpeg" alt="Haircut in Progress"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+    <div class="gi" data-cat="facial"><img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__2_.jpeg" alt="Clay Mask"><div class="gi-overlay"><span class="gi-zoom">⊕</span></div></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog">
+  <div class="lb-backdrop" onclick="closeLB()"></div>
+  <button class="lb-close" onclick="closeLB()">✕</button>
+  <button class="lb-arrow lb-prev" onclick="lbNav(-1)">‹</button>
+  <div class="lb-img-wrap"><img id="lbImg" src="" alt="Gallery Image"></div>
+  <button class="lb-arrow lb-next" onclick="lbNav(1)">›</button>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
+<!-- =================== VIDEO =================== -->
+<section id="video">
+  <div class="video-inner">
+    <div class="video-content reveal">
+      <span class="section-label" data-en="Experience" data-al="Eksperiencë">Experience</span>
+      <h2 class="section-heading left"><span data-en="Experience " data-al="Eksperiencë ">Experience </span><span class="gold-text" data-en="Barber Meço 3" data-al="Barber Meço 3">Barber Meço 3</span></h2>
+      <div class="gold-divider left-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+      <p class="about-body" data-en="Step inside Tirana's most refined grooming lounge. Watch our craftsmen at work — every clip, every stroke, every detail executed with purpose and precision." data-al="Hyni brenda sallonit më të rafinuar të rregullimit në Tiranë. Shikoni artizanët tanë në punë — çdo prerje, çdo lëvizje, çdo detaj i ekzekutuar me qëllim dhe precizion.">Step inside Tirana's most refined grooming lounge. Watch our craftsmen at work — every clip, every stroke, every detail executed with purpose and precision.</p>
+      <a href="#" class="btn-primary wa-btn" style="margin-top:30px;display:inline-flex"
+         data-en-msg="Hello Barber Meço 3! I would like to book a premium grooming experience. Please let me know your availability."
+         data-al-msg="Pershendetje Barber Meço 3! Dua te rezervoj nje eksperience premium grooming. Ju lutem me tregoni disponibilitetin tuaj."
+         data-en="Book Your Experience" data-al="Rezervo Eksperiencën Tënde">
+        <span>Book Your Experience</span>
+      </a>
+    </div>
+    <div class="video-embed reveal-right">
+      <div class="video-placeholder">
+        <!-- Full-size logo before video plays -->
+        <div class="vp-logo-bg">
+          <img src="images/1773662793739_image.png" alt="Barber Meço 3" class="vp-full-logo">
+        </div>
+        <div class="vp-overlay">
+          <div class="vp-play" id="videoPlayBtn">
+            <div class="play-circle">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span data-en="Watch Our Story" data-al="Shiko Historinë Tonë">Watch Our Story</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== BOOKING =================== -->
+<section id="booking">
+  <div class="booking-bg">
+    <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__1_.jpeg" alt="">
+    <div class="booking-bg-overlay"></div>
+  </div>
+  <div class="booking-inner">
+    <div class="section-intro reveal" style="position:relative;z-index:2">
+      <span class="section-label" data-en="Reserve Your Time" data-al="Rezervo Kohën Tënde">Reserve Your Time</span>
+      <h2 class="section-heading"><span data-en="Book Your " data-al="Rezervo ">Book Your </span><span class="gold-text" data-en="Experience" data-al="Eksperiencën">Experience</span></h2>
+      <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+      <p class="section-desc" data-en="Fill in your details and we'll send your booking directly on WhatsApp." data-al="Plotëso të dhënat dhe rezervimi juaj do të dërgohet direkt në WhatsApp.">Fill in your details and we'll send your booking directly on WhatsApp.</p>
+    </div>
+    <div class="booking-card reveal" style="position:relative;z-index:2">
+      <div class="pb-corner pb-tl"></div><div class="pb-corner pb-tr"></div>
+      <div class="pb-corner pb-bl"></div><div class="pb-corner pb-br"></div>
+      <form id="bookingForm" onsubmit="submitBookingWA(event)" novalidate>
+        <div class="form-grid">
+          <div class="fg">
+            <label data-en="Full Name *" data-al="Emri i Plotë *">Full Name *</label>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="fg">
+            <label data-en="Phone Number *" data-al="Nr. Telefoni *">Phone Number *</label>
+            <input type="tel" name="phone" placeholder="+355 69 xxx xxxx" required>
+          </div>
+          <div class="fg">
+            <label data-en="Service *" data-al="Shërbimi *">Service *</label>
+            <select name="service" required>
+              <option value="" data-en="Select a service…" data-al="Zgjidh shërbimin…">Select a service…</option>
+              <option data-en="Haircut + Wash / Scrub — 1,200 Lek" data-al="Qethje + Larje / Scrub — 1,200 Lek">Haircut + Wash / Scrub — 1,200 Lek</option>
+              <option data-en="Haircut + Beard Trim — 1,500 Lek" data-al="Qethje + Rregullim Mjekre — 1,500 Lek">Haircut + Beard Trim — 1,500 Lek</option>
+              <option data-en="Haircut + Beard + Wax — 1,700 Lek" data-al="Qethje + Mjekre + Wax — 1,700 Lek">Haircut + Beard + Wax — 1,700 Lek</option>
+              <option data-en="Haircut + Beard Full Wax — 2,000 Lek" data-al="Qethje + Mjekre Full Wax — 2,000 Lek">Haircut + Beard Full Wax — 2,000 Lek</option>
+              <option data-en="Haircut + Beard Wax/Mask — 2,200 Lek" data-al="Qethje + Mjekre Wax/Mask — 2,200 Lek">Haircut + Beard Wax/Mask — 2,200 Lek</option>
+              <option data-en="Kids Haircut — 800 Lek" data-al="Qethje Femijesh — 800 Lek">Kids Haircut — 800 Lek</option>
+              <option data-en="Zero Haircut — 700 Lek" data-al="Qethje Zero — 700 Lek">Zero Haircut — 700 Lek</option>
+              <option data-en="Beard Shave — 700 Lek" data-al="Rruajtje me Brisk — 700 Lek">Beard Shave — 700 Lek</option>
+              <option data-en="Machine Shave — 300 Lek" data-al="Rruajtje me Makine — 300 Lek">Machine Shave — 300 Lek</option>
+              <option data-en="Beard Styling / Trim — 600 Lek" data-al="Stilim Mjekre / Brisk — 600 Lek">Beard Styling / Trim — 600 Lek</option>
+              <option data-en="Beard Wax Styling — 800 Lek" data-al="Stilim Mjekre me Wax — 800 Lek">Beard Wax Styling — 800 Lek</option>
+              <option data-en="Face Mask — 500 Lek" data-al="Maske Argile — 500 Lek">Face Mask — 500 Lek</option>
+              <option data-en="Face Scrub — 500 Lek" data-al="Scrub Fytyre — 500 Lek">Face Scrub — 500 Lek</option>
+              <option data-en="Beard Oil Treatment — 500 Lek" data-al="Lyrje Mjekre — 500 Lek">Beard Oil Treatment — 500 Lek</option>
+              <option data-en="Hair Oil Treatment — 800 Lek" data-al="Lyrje Koke — 800 Lek">Hair Oil Treatment — 800 Lek</option>
+              <option data-en="Hair Wash + Styling — 300 Lek" data-al="Larje Koke + Stilim — 300 Lek">Hair Wash + Styling — 300 Lek</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label data-en="Date *" data-al="Data *">Date *</label>
+            <input type="date" name="date" required>
+          </div>
+          <div class="fg">
+            <label data-en="Time *" data-al="Ora *">Time *</label>
+            <select name="time" required>
+              <option value="" data-en="Select time…" data-al="Zgjidh orën…">Select time…</option>
+              <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option>
+              <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option>
+              <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+              <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option>
+              <option>17:00</option><option>17:30</option><option>18:00</option>
+            </select>
+          </div>
+          <div class="fg full">
+            <label data-en="Message (Optional)" data-al="Mesazh (Opsional)">Message (Optional)</label>
+            <textarea name="message" rows="3" placeholder="Any special requests…"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-en="Send Booking on WhatsApp" data-al="Dërgo Rezervimin në WhatsApp">Send Booking on WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TESTIMONIALS =================== -->
+<section id="testimonials">
+  <div class="section-intro reveal">
+    <span class="section-label" data-en="Client Voices" data-al="Zërat e Klientëve">Client Voices</span>
+    <h2 class="section-heading"><span data-en="What They " data-al="Çfarë ">What They </span><span class="gold-text" data-en="Say" data-al="Thonë">Say</span></h2>
+    <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+    <div class="rating-block reveal">
+      <div class="rb-score">4.7</div>
+      <div class="rb-right">
+        <div class="rb-stars">★★★★★</div>
+        <div class="rb-count" data-en="Based on 23 Google Reviews" data-al="Bazuar në 23 Vlerësime Google">Based on 23 Google Reviews</div>
+        <a href="https://maps.google.com/?q=Barber+Meco+3+Tirana" target="_blank" class="rb-link" data-en="Read all reviews →" data-al="Lexo të gjitha vlerësimet →">Read all reviews →</a>
+      </div>
+    </div>
+  </div>
+  <div class="testi-slider reveal">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="tc-stars">★★★★★</div>
+        <blockquote class="tc-quote">"An absolutely exceptional experience from start to finish. The precision, the attention to detail, the professionalism — everything was at the highest level. Truly the best barbershop in Tirana."</blockquote>
+        <div class="tc-author"><div class="tca-avatar">A</div><div><strong>Artan M.</strong><span>Google Review</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="tc-stars">★★★★★</div>
+        <blockquote class="tc-quote">"I've been coming here for years and the quality never drops. The team is incredibly skilled and always welcoming. The atmosphere alone is worth the visit."</blockquote>
+        <div class="tc-author"><div class="tca-avatar">E</div><div><strong>Erion B.</strong><span>Google Review</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="tc-stars">★★★★★</div>
+        <blockquote class="tc-quote">"The beard wax treatment completely transformed my look. Absolutely meticulous work — the barbers genuinely care about every detail. Highly commendable."</blockquote>
+        <div class="tc-author"><div class="tca-avatar">K</div><div><strong>Klajdi P.</strong><span>Google Review</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="tc-stars">★★★★☆</div>
+        <blockquote class="tc-quote">"Premium service at a fair price. The facial treatment was incredibly relaxing and the haircut was executed to perfection. I wouldn't go anywhere else in the city."</blockquote>
+        <div class="tc-author"><div class="tca-avatar">L</div><div><strong>Ledion S.</strong><span>Google Review</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="tc-stars">★★★★★</div>
+        <blockquote class="tc-quote">"The staff's courtesy and technical mastery sets this place apart. Every visit feels like a true luxury experience. My go-to barbershop — nothing comes close."</blockquote>
+        <div class="tc-author"><div class="tca-avatar">G</div><div><strong>Gent R.</strong><span>Google Review</span></div></div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="ts-btn" id="tsPrev">‹</button>
+      <div class="ts-dots" id="tsDots"></div>
+      <button class="ts-btn" id="tsNext">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LOCATION =================== -->
+<section id="location">
+  <div class="section-intro reveal">
+    <span class="section-label" data-en="Find Us" data-al="Na Gjeni">Find Us</span>
+    <h2 class="section-heading"><span data-en="Our " data-al="Vendndodhja ">Our </span><span class="gold-text" data-en="Location" data-al="Jonë">Location</span></h2>
+    <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+  </div>
+  <div class="location-grid">
+    <div class="loc-map reveal-left">
+      <!-- EXACT PIN: 8QCV+XJ2, Kompleksi Delijorgji, pranë Tirana Bank, Tiranë, Albania -->
+      <iframe
+        src="https://maps.google.com/maps?q=8QCV%2BXJ2+Tiran%C3%AB+Albania&z=18&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Barber Meço 3 — 8QCV+XJ2, Kompleksi Delijorgji, pranë Tirana Bank, Tiranë, Albania">
+      </iframe>
+    </div>
+    <div class="loc-card reveal-right">
+      <div class="pb-corner pb-tl"></div><div class="pb-corner pb-tr"></div>
+      <div class="pb-corner pb-bl"></div><div class="pb-corner pb-br"></div>
+      <img src="images/1773662793739_image.png" alt="Logo" class="lc-logo">
+      <div class="lc-name">BARBER MEÇO 3</div>
+      <div class="lc-since" data-en="Premium Grooming · Since 2007" data-al="Rregullim Premium · Që nga 2007">Premium Grooming · Since 2007</div>
+      <div class="lc-open" id="openStatus"><span class="open-dot" id="openDot"></span> <span id="openText">Open Now</span></div>
+      <div class="lc-detail"><span class="lc-icon">&#128205;</span><span data-en="8QCV+XJ2, Kompleksi Delijorgji, pranë Tirana Bank, Tiranë, Albania" data-al="8QCV+XJ2, Kompleksi Delijorgji, pranë Tirana Bank, Tiranë, Shqipëri">8QCV+XJ2, Kompleksi Delijorgji, pranë Tirana Bank, Tiranë, Albania</span></div>
+      <div class="lc-detail"><span class="lc-icon">&#128222;</span><span><a href="tel:+355692080017">+355 69 208 0017</a></span></div>
+      <div class="lc-detail"><span class="lc-icon">&#11088;</span><span>4.7 / 5 · 23 Google Reviews</span></div>
+      <div class="lc-detail"><span class="lc-icon">&#128336;</span>
+        <div class="lc-hours">
+          <div class="lch-row"><span data-en="Mon – Sat" data-al="Hën – Sht">Mon – Sat</span><span>09:00 – 20:00</span></div>
+          <div class="lch-row"><span data-en="Sunday" data-al="E Diel">Sunday</span><span>10:00 – 17:00</span></div>
+        </div>
+      </div>
+      <div class="lc-btns">
+        <a href="https://www.google.com/maps/search/Barber+Meço+3/@41.3288,19.8178,17z" target="_blank" class="btn-primary" style="font-size:10px;padding:13px 20px" data-en="Get Directions" data-al="Merr Drejtimin">Get Directions</a>
+        <a href="tel:+355692080017" class="btn-call-gold" data-en="Call Now" data-al="Telefono">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== INSTAGRAM =================== -->
+<section id="instagram">
+  <div class="section-intro reveal">
+    <span class="section-label" data-en="Follow Us" data-al="Na Ndiqni">Follow Us</span>
+    <h2 class="section-heading"><span data-en="On " data-al="Në ">On </span><span class="gold-text">Instagram</span></h2>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-handle">@barber_meco.3</a>
+    <div class="gold-divider"><div class="gd-line"></div><div class="gd-diamond"></div><div class="gd-line"></div></div>
+  </div>
+  <div class="ig-grid reveal">
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__21_.jpeg" alt="">
+      <div class="ig-hover">
+        <svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__22_.jpeg" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__3_.jpeg" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__7_.jpeg" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__9_.jpeg" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__4_.jpeg" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/WhatsApp_Image_2026-03-16_at_12_57_11_PM__27_.jpeg" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="ig-item">
+      <img src="images/exterior.png" alt="">
+      <div class="ig-hover"><svg class="ig-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+  </div>
+  <div style="text-align:center;margin-top:40px" class="reveal">
+    <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="btn-outline" data-en="Follow on Instagram" data-al="Na Ndiqni në Instagram">Follow on Instagram</a>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <img src="images/1773662793739_image.png" alt="Logo">
+        <div class="logo-text"><span>BARBER MEÇO 3</span><span data-en="Premium Grooming · Since 2007" data-al="Rregullim Premium · Që nga 2007">Premium Grooming · Since 2007</span></div>
+      </div>
+      <p class="footer-about" data-en="Tirana's finest grooming destination since 2007. Where craftsmanship meets luxury — delivering exceptional results with every visit." data-al="Destinacioni më i mirë i rregullimit në Tiranë që nga 2007. Ku artizanati takon luksin — duke ofruar rezultate të jashtëzakonshme me çdo vizitë.">Tirana's finest grooming destination since 2007. Where craftsmanship meets luxury.</p>
+      <a href="https://www.instagram.com/barber_meco.3/" target="_blank" class="footer-ig">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @barber_meco.3
+      </a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title" data-en="Navigation" data-al="Navigim">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#about" data-en="About Us" data-al="Rreth Nesh">About Us</a></li>
+        <li><a href="#services" data-en="Services" data-al="Shërbimet">Services</a></li>
+        <li><a href="#pricelist" data-en="Price List" data-al="Lista e Çmimeve">Price List</a></li>
+        <li><a href="#gallery" data-en="Gallery" data-al="Galeria">Gallery</a></li>
+        <li><a href="#team" data-en="Our Team" data-al="Ekipi Ynë">Our Team</a></li>
+        <li><a href="#booking" data-en="Book Now" data-al="Rezervo">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title" data-en="Services" data-al="Shërbime">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services" data-en="Haircuts" data-al="Qethje">Haircuts</a></li>
+        <li><a href="#services" data-en="Beard Styling" data-al="Stilim Mjekre">Beard Styling</a></li>
+        <li><a href="#services" data-en="Facial Treatments" data-al="Trajtime Faciale">Facial Treatments</a></li>
+        <li><a href="#services" data-en="Wax Treatments" data-al="Trajtime Wax">Wax Treatments</a></li>
+        <li><a href="#services" data-en="Hair Treatments" data-al="Trajtime Flokësh">Hair Treatments</a></li>
+        <li><a href="#services" data-en="Kids Cuts" data-al="Qethje Fëmijësh">Kids Cuts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title" data-en="Contact" data-al="Kontakt">Contact</div>
+      <div class="footer-detail">&#128205; Kompleksi Delijorgji, pranë Tirana Bank, Tiranë, Albania</div>
+      <div class="footer-detail">&#128222; <a href="tel:+355692080017">+355 69 208 0017</a></div>
+      <div class="footer-detail" data-en="&#128336; Mon–Sat: 09:00–20:00 · Sun: 10:00–17:00" data-al="&#128336; Hën–Sht: 09:00–20:00 · Die: 10:00–17:00">&#128336; Mon–Sat: 09:00–20:00 · Sun: 10:00–17:00</div>
+      <a href="#booking" class="btn-primary" style="font-size:10px;padding:13px 20px;margin-top:18px;display:inline-flex" data-en="Book Appointment" data-al="Rezervo Takim">Book Appointment</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="fb-copy">© 2024 <span>Barber Meço 3</span>. <span data-en="Premium Grooming Since 2007. All Rights Reserved." data-al="Rregullim Premium Që nga 2007. Të Gjitha të Drejtat të Rezervuara.">Premium Grooming Since 2007. All Rights Reserved.</span></div>
+    <div class="fb-tagline" data-en="Crafted with excellence · Tirana, Albania" data-al="Krijuar me ekselencë · Tiranë, Shqipëri">Crafted with excellence · Tirana, Albania</div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/355692080017?text=Hello%20Barber%20Me%C3%A7o%203!%20I%20would%20like%20to%20book%20an%20appointment."
+   target="_blank" class="float-wa" title="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<a href="#booking" class="float-book" data-en="Book Now" data-al="Rezervo">Book Now</a>
+
+<!-- MOBILE STICKY BOOKING BAR — visible only on mobile -->
+<div class="mobile-book-bar">
+  <a href="#booking" class="mbb-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    <span data-en="Book Now" data-al="Rezervo Tani">Book Now</span>
+  </a>
+  <div class="mbb-divider"></div>
+  <a href="book-barber.html" target="_blank" class="mbb-btn mbb-barber">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+    <span data-en="Book the Barber" data-al="Rezervo Berberin">Book the Barber</span>
+  </a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

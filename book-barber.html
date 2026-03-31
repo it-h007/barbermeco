@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book the Barber — Barber Meço</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --espresso:#1A0E06;--mid:#5C3D2E;--caramel:#8B5E3C;
+  --gold:#C9A84C;--gold2:#F0CB6A;--gold3:#A07830;
+  --g-gold2:linear-gradient(90deg,#C9A84C,#F0CB6A);
+  --border-gold:rgba(201,168,76,.3);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Outfit',sans-serif;background:#0a0703;color:#fff;min-height:100vh;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+.page-bg{position:fixed;inset:0;z-index:0;
+  background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(201,168,76,.1) 0%,transparent 65%),
+             #0a0703;
+}
+.page-bg::before{content:'';position:absolute;inset:0;
+  background-image:repeating-linear-gradient(0deg,rgba(201,168,76,.02) 0,rgba(201,168,76,.02) 1px,transparent 1px,transparent 64px),
+                   repeating-linear-gradient(90deg,rgba(201,168,76,.02) 0,rgba(201,168,76,.02) 1px,transparent 1px,transparent 64px);
+}
+
+.page-wrap{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 24px 60px;}
+
+.back-link{position:fixed;top:22px;left:26px;z-index:10;display:flex;align-items:center;gap:8px;
+  font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:2px;
+  color:rgba(255,255,255,.45);text-transform:uppercase;transition:color .3s;}
+.back-link:hover{color:var(--gold2);}
+.back-link svg{transition:transform .3s;}
+.back-link:hover svg{transform:translateX(-3px);}
+
+.page-logo{width:80px;margin:0 auto 30px;mix-blend-mode:lighten;opacity:.95;display:block;}
+.eyebrow{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:6px;text-transform:uppercase;text-align:center;margin-bottom:10px;}
+.page-title{font-family:'Cinzel',serif;font-size:clamp(26px,5vw,50px);font-weight:700;text-align:center;
+  letter-spacing:2px;line-height:1.15;margin-bottom:10px;
+  background:var(--g-gold2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-sub{font-size:14px;color:rgba(255,255,255,.48);text-align:center;max-width:440px;line-height:1.7;margin-bottom:16px;}
+.gd{display:flex;align-items:center;gap:12px;max-width:180px;margin:0 auto 50px;}
+.gd-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.gd-dot{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;}
+
+.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:800px;width:100%;}
+
+.choice-card{position:relative;overflow:hidden;border:1px solid var(--border-gold);
+  background:rgba(44,24,16,.4);backdrop-filter:blur(12px);
+  transition:all .4s cubic-bezier(.25,.46,.45,.94);}
+.choice-card:hover{transform:translateY(-7px);border-color:rgba(201,168,76,.6);box-shadow:0 22px 64px rgba(0,0,0,.5),0 0 42px rgba(201,168,76,.1);}
+.cc-corner{position:absolute;width:22px;height:22px;pointer-events:none;}
+.cc-tl{top:0;left:0;border-top:2px solid var(--gold);border-left:2px solid var(--gold);}
+.cc-tr{top:0;right:0;border-top:2px solid var(--gold);border-right:2px solid var(--gold);}
+.cc-img{width:100%;height:240px;object-fit:cover;object-position:center;filter:brightness(.5) saturate(.65);transition:filter .45s;}
+.choice-card:hover .cc-img{filter:brightness(.38) saturate(.55);}
+.cc-body{padding:26px 24px 30px;}
+.cc-tag{font-size:9px;font-weight:700;color:var(--gold);letter-spacing:4px;text-transform:uppercase;margin-bottom:8px;display:block;}
+.cc-name{font-family:'Cinzel',serif;font-size:clamp(18px,2.5vw,26px);font-weight:700;letter-spacing:2px;margin-bottom:8px;
+  background:var(--g-gold2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.cc-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:22px;}
+.cc-btn{display:inline-flex;align-items:center;gap:9px;
+  font-family:'Cinzel',serif;font-size:9px;font-weight:700;letter-spacing:3px;
+  color:#0a0703 !important;text-transform:uppercase;
+  background:var(--g-gold2);padding:12px 28px;
+  clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);
+  transition:all .3s;-webkit-text-fill-color:#0a0703 !important;}
+.cc-btn:hover{box-shadow:0 6px 22px rgba(201,168,76,.45);transform:translateY(-1px);}
+.choice-card::after{content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(201,168,76,.06) 0%,transparent 55%);
+  opacity:0;transition:opacity .4s;pointer-events:none;}
+.choice-card:hover::after{opacity:1;}
+
+.page-note{margin-top:44px;font-size:12px;color:rgba(255,255,255,.28);text-align:center;letter-spacing:.5px;}
+.page-note a{color:var(--gold);transition:color .3s;}
+.page-note a:hover{color:var(--gold2);}
+
+@media(max-width:600px){.choice-grid{grid-template-columns:1fr;}.cc-img{height:190px;}}
+</style>
+</head>
+<body>
+<div class="page-bg"></div>
+
+<a href="index.html" class="back-link">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+  Back to Site
+</a>
+
+<div class="page-wrap">
+  <img src="images/1773662793739_image.png" alt="Barber Meço" class="page-logo">
+  <p class="eyebrow">Premium Barbershop</p>
+  <h1 class="page-title">Book the Barber</h1>
+  <p class="page-sub">Choose your preferred Barber Meço location, then select the master barber you'd like your appointment with.</p>
+  <div class="gd"><div class="gd-line"></div><div class="gd-dot"></div><div class="gd-line"></div></div>
+
+  <div class="choice-grid">
+    <div class="choice-card">
+      <div class="cc-corner cc-tl"></div><div class="cc-corner cc-tr"></div>
+      <img src="images/exterior_meco2.png" alt="Barber Meço 2" class="cc-img">
+      <div class="cc-body">
+        <span class="cc-tag">Location 2</span>
+        <div class="cc-name">Barber Meço 2</div>
+        <p class="cc-desc">Our second premium location. Choose your favourite master and book your session.</p>
+        <a href="book-meco2.html" target="_blank" class="cc-btn">
+          Choose Barber
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="choice-card">
+      <div class="cc-corner cc-tl"></div><div class="cc-corner cc-tr"></div>
+      <img src="images/exterior_new.png" alt="Barber Meço 3" class="cc-img">
+      <div class="cc-body">
+        <span class="cc-tag">Location 3 — Flagship</span>
+        <div class="cc-name">Barber Meço 3</div>
+        <p class="cc-desc">Our flagship premium barbershop since 2007. Select your barber and reserve your experience.</p>
+        <a href="book-meco3.html" target="_blank" class="cc-btn">
+          Choose Barber
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p class="page-note">Your booking will be sent directly via WhatsApp &nbsp;·&nbsp; <a href="index.html">Return to main site</a></p>
+</div>
+</body>
+</html>
